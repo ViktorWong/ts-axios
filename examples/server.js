@@ -103,6 +103,17 @@ router.patch('/extend/patch',function(req,res){
   res.json(req.body)
 })
 
+router.get('/extend/user',function(req,res){
+  res.json({
+    code: '200',
+    result: {
+      name:'viktor',
+      age:12
+    },
+    message: 'success'
+  })
+})
+
 
 app.use(router)
 
